@@ -1,0 +1,723 @@
+<!-- =========================================
+ULTRA PREMIUM SISTER BIRTHDAY SURPRISE
+8 LAYERS + MUSIC + PHOTOS + SHAYARI
+========================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>World Best Sister ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    overflow:hidden;
+    background:linear-gradient(135deg,#000000,#120136,#000814);
+    height:100vh;
+    color:white;
+}
+
+/* PARTICLE BACKGROUND */
+
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-3;
+}
+
+/* COMMON SCREEN */
+
+.screen{
+
+    position:absolute;
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    transition:1s;
+}
+
+/* HIDDEN */
+
+.hidden{
+    display:none;
+}
+
+/* HEADINGS */
+
+h1{
+
+    font-size:42px;
+
+    text-align:center;
+
+    text-shadow:
+    0 0 20px cyan,
+    0 0 40px cyan;
+
+    animation:pulse 2s infinite alternate;
+}
+
+@keyframes pulse{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.06);
+    }
+}
+
+/* BUTTON */
+
+button{
+
+    margin-top:25px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(45deg,#ff00ff,cyan);
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:0.5s;
+
+    box-shadow:
+    0 0 20px cyan,
+    0 0 50px #ff00ff;
+}
+
+button:hover{
+
+    transform:scale(1.1);
+}
+
+/* GIFT */
+
+.gift{
+
+    font-size:130px;
+
+    animation:shake 1s infinite;
+}
+
+@keyframes shake{
+
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(5deg);}
+    50%{transform:rotate(-5deg);}
+    75%{transform:rotate(5deg);}
+    100%{transform:rotate(0deg);}
+}
+
+/* PHOTO */
+
+.photo{
+
+    width:310px;
+    height:390px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    margin-top:20px;
+
+    box-shadow:
+    0 0 25px cyan,
+    0 0 70px #ff00ff;
+
+    animation:floatbox 4s infinite ease-in-out;
+}
+
+.photo img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+@keyframes floatbox{
+
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+    100%{transform:translateY(0);}
+}
+
+/* SLIDER */
+
+.slider{
+
+    width:320px;
+    height:400px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    margin-top:20px;
+
+    box-shadow:
+    0 0 25px cyan,
+    0 0 60px #ff00ff;
+}
+
+.slides{
+
+    display:flex;
+
+    width:600%;
+
+    animation:slide 24s infinite;
+}
+
+.slides img{
+
+    width:320px;
+    height:400px;
+
+    object-fit:cover;
+}
+
+@keyframes slide{
+
+    0%{transform:translateX(0);}
+    15%{transform:translateX(0);}
+
+    20%{transform:translateX(-320px);}
+    35%{transform:translateX(-320px);}
+
+    40%{transform:translateX(-640px);}
+    55%{transform:translateX(-640px);}
+
+    60%{transform:translateX(-960px);}
+    75%{transform:translateX(-960px);}
+
+    80%{transform:translateX(-1280px);}
+    90%{transform:translateX(-1280px);}
+
+    100%{transform:translateX(0);}
+}
+
+/* SHAYARI */
+
+.shayari{
+
+    width:85%;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-size:24px;
+
+    line-height:42px;
+
+    color:#ffd6ff;
+
+    text-shadow:
+    0 0 10px pink;
+
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+    from{
+        opacity:0.7;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+/* HEARTS */
+
+.heart{
+
+    position:absolute;
+
+    animation:rise 6s linear infinite;
+}
+
+@keyframes rise{
+
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-100vh);
+        opacity:0;
+    }
+}
+
+/* FIREWORK */
+
+.fire{
+
+    position:absolute;
+
+    font-size:40px;
+
+    animation:boom 1s linear forwards;
+}
+
+@keyframes boom{
+
+    from{
+        transform:scale(0);
+        opacity:1;
+    }
+
+    to{
+        transform:scale(3);
+        opacity:0;
+    }
+}
+
+/* BALLOON */
+
+.balloon{
+
+    position:absolute;
+
+    font-size:40px;
+
+    animation:fly 8s linear infinite;
+}
+
+@keyframes fly{
+
+    from{
+        transform:translateY(100vh);
+    }
+
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+/* FINAL */
+
+.final{
+
+    text-align:center;
+
+    font-size:48px;
+
+    line-height:80px;
+
+    text-shadow:
+    0 0 20px cyan,
+    0 0 50px #ff00ff;
+
+    animation:zoom 2s infinite alternate;
+}
+
+@keyframes zoom{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.08);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<!-- LAYER 1 -->
+
+<div class="screen" id="l1">
+
+<div class="gift">🎁</div>
+
+<h1>Special Surprise For My Lovely Sister ❤️</h1>
+
+<button onclick="next1()">
+Open Gift ✨
+</button>
+
+</div>
+
+<!-- LAYER 2 -->
+
+<div class="screen hidden" id="l2">
+
+<h1>🎂 Happy Birthday lovely Sis 🎂</h1>
+
+<div class="photo">
+<img src="photo1.jpg">
+</div>
+
+<div class="shayari">
+
+sari duniya ki khusi fiki pad jaye❤️
+jab tu muskuraye to din ban jaye💖 
+
+</div>
+
+<button onclick="next2()">
+Next  💖
+</button>
+
+</div>
+
+<!-- LAYER 3 -->
+
+<div class="screen hidden" id="l3">
+
+<h1>Beautiful Memories 📸</h1>
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+
+</div>
+
+</div>
+
+<button onclick="next3()">
+Continue ✨
+</button>
+
+</div>
+
+<!-- LAYER 4 -->
+
+<div class="screen hidden" id="l4">
+
+<h1>❤️ PYARI BAHANA ❤️</h1>
+
+<div class="shayari">
+
+Teri hasi meri khusi hai 💖<br><br>
+
+khuda kare tera har sapna pura ho ✨<br><br>
+
+Tu hamesha khush rahe meri pyari behen 🌸
+
+</div>
+
+<div class="photo">
+<img src="photo2.jpg">
+</div>
+
+<button onclick="next4()">
+One More  🎆
+</button>
+
+</div>
+
+<!-- LAYER 5 -->
+
+<div class="screen hidden" id="l5">
+
+<h1>🌸 Best Sister 🌸</h1>
+
+<div class="photo">
+<img src="photo3.jpg">
+</div>
+
+<div class="shayari">
+
+ ❤️
+
+</div>
+
+<button onclick="next5()">
+Continue 💫
+</button>
+
+</div>
+
+<!-- LAYER 6 -->
+
+<div class="screen hidden" id="l6">
+
+<h1>💖 Forever Bond 💖</h1>
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+
+</div>
+
+</div>
+
+<div class="shayari">
+
+ kya karu teri tulna chand se 🎂❤️
+husn ki baat aaye to duniya ki sundarta bhi fiki pad jaye💖💖
+
+
+</div>
+
+<button onclick="next6()">
+conti..... ✨
+</button>
+
+</div>
+
+<!-- LAYER 7 -->
+
+<div class="screen hidden" id="l7">
+
+<div class="photo">
+<img src="photo5.jpg">
+</div>
+
+<div class="shayari">
+
+Har birthday tere liye khushiyan laaye 🌸<br><br>
+
+Aur teri smile kabhi kam na ho ❤️
+
+</div>
+
+<button onclick="next7()">
+Last one 🎁
+</button>
+
+</div>
+
+<!-- LAYER 8 -->
+
+<div class="screen hidden" id="l8">
+
+<div class="final">
+
+❤️ WORLD BEST SISTER ❤️<br><br>
+
+🎂 HAPPY BIRTHDAY NONI 🎂
+
+</div>
+
+</div>
+
+<!-- MUSIC -->
+
+<audio id="music" loop>
+<source src="birthdaymusic.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+/* PARTICLES */
+
+const canvas=document.getElementById('bg');
+
+const ctx=canvas.getContext('2d');
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+for(let i=0;i<150;i++){
+
+particles.push({
+
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*3,
+dx:(Math.random()-0.5)*2,
+dy:(Math.random()-0.5)*2
+
+});
+}
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+ctx.fillStyle='cyan';
+
+particles.forEach(p=>{
+
+ctx.beginPath();
+
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+
+ctx.fill();
+
+p.x+=p.dx;
+p.y+=p.dy;
+
+if(p.x<0 || p.x>canvas.width) p.dx*=-1;
+if(p.y<0 || p.y>canvas.height) p.dy*=-1;
+
+});
+
+requestAnimationFrame(animate);
+}
+
+animate();
+
+/* HEARTS */
+
+function hearts(){
+
+for(let i=0;i<15;i++){
+
+let heart=document.createElement('div');
+
+heart.classList.add('heart');
+
+heart.innerHTML='💖';
+
+heart.style.left=Math.random()*100+'vw';
+
+heart.style.fontSize=(20+Math.random()*35)+'px';
+
+heart.style.animationDuration=(3+Math.random()*5)+'s';
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},7000);
+
+}
+}
+
+setInterval(hearts,2000);
+
+/* BALLOONS */
+
+function balloons(){
+
+for(let i=0;i<10;i++){
+
+let b=document.createElement('div');
+
+b.classList.add('balloon');
+
+b.innerHTML='🎈';
+
+b.style.left=Math.random()*100+'vw';
+
+b.style.animationDuration=(5+Math.random()*5)+'s';
+
+document.body.appendChild(b);
+
+setTimeout(()=>{
+b.remove();
+},9000);
+
+}
+}
+
+setInterval(balloons,3000);
+
+/* FIREWORK */
+
+function fireworks(){
+
+for(let i=0;i<40;i++){
+
+let fire=document.createElement('div');
+
+fire.classList.add('fire');
+
+fire.innerHTML='🎆';
+
+fire.style.left=Math.random()*100+'vw';
+
+fire.style.top=Math.random()*100+'vh';
+
+document.body.appendChild(fire);
+
+setTimeout(()=>{
+fire.remove();
+},1000);
+
+}
+}
+
+/* NEXT */
+
+function show(a,b){
+
+document.getElementById(a).style.display='none';
+
+document.getElementById(b).style.display='flex';
+
+fireworks();
+
+}
+
+function next1(){
+
+document.getElementById('music').play();
+
+show('l1','l2');
+
+}
+
+function next2(){show('l2','l3');}
+function next3(){show('l3','l4');}
+function next4(){show('l4','l5');}
+function next5(){show('l5','l6');}
+function next6(){show('l6','l7');}
+function next7(){
+
+show('l7','l8');
+
+setInterval(fireworks,1500);
+
+}
+
+</script>
+
+</body>
+</html>
